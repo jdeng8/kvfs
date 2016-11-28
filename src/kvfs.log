@@ -1,0 +1,25 @@
+
+kvfs_init()
+    conn:
+    proto_major = 7
+    proto_minor = 23
+    async_read = 1
+    max_write = 131072
+    max_readahead = 131072
+    capable = 00000ffb
+    want = 00000010
+    max_background = 0
+    congestion_threshold = 0
+    context:
+    fuse = 00bd54f0
+    uid = 0
+    gid = 0
+    pid = 0
+    private_data = 00bd4010
+    logfile = 00bd5040
+    rootdir = /home/shanchuan/kvfs_test
+    umask = 00000
+    kvfs_fullpath:  path = "/"
+    kvfs_fullpath:  path = "/"
+
+kvfs_destroy(userdata=0x00bd4010)
