@@ -15,6 +15,14 @@
   software; hopefully, the comments in this code will help people who
   follow later to get a gentler introduction.
 
+
+  Team Member:
+  
+  HengJin Tan 	: htan5
+  Jingjuan Deng	: jdeng8
+  Shanchuan Xia	: sxia4
+
+
 */
 
 #include "kvfs.h"
@@ -435,6 +443,7 @@ printf("call setattr\n");
     char fpath[PATH_MAX];
     get_fpath(fpath,path);
     return lsetxattr(fpath, name, value, size, flags);
+// retrun 0;
 }
 
 /** Get extended attributes */
