@@ -427,11 +427,7 @@ printf("call release\n");
 int kvfs_fsync_impl(const char *path, int datasync, struct fuse_file_info *fi)
 {
 printf("call fsync\n");
-    #ifdef HAVE_FDATASYNC
-      if (datasync)
-        return fdatasync(fi->fh);
-      else
-    #endif  
+ 
     return fsync(fi->fh);
 }
 
