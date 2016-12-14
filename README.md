@@ -7,9 +7,10 @@ First, to make the file system efficient for sharing among multiple clients, the
 
 Second, to make the file system more secure, the file system uses MD5 to hash file names. As a result, anyone else cannot easily figure out what was the original filename, directory structure. Although MD5 can be brute-force attacked these days, it still take quite a while for an attacker to figure out. 
 
-how to begin with KVFS:
 To begin, you need to make sure your linux install contains the following:
-1. Fuse (2.9.7). Download fuse 2.9.7 from https://github.com/libfuse/libfuse/releases/tag/fuse-2.9.7. Follow the instruction in their website and install the package.
+
+1. Install Fuse (2.9.7). 
+Download fuse 2.9.7 from https://github.com/libfuse/libfuse/releases/tag/fuse-2.9.7. Follow the instruction in their website and install the package.
 
 2. OpenSSL library. We need this library for MD5 functions. In ubuntu, you can get this package installed by using the following command:
 sudo apt-get install libssl-dev
