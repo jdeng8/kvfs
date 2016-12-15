@@ -1,5 +1,5 @@
 # Encrypted Key Value File System
-In this project, we implemented SKVFS on top of fuse -- filesystem in user space. Using existing system calls to support the required features that make the SKVFS file system work.
+In this project, we implemented KVFS on top of fuse -- filesystem in user space. Using existing system calls to support the required features that make the SKVFS file system work.
 
 The KVFS is different from conventional file systems in two ways:
 
